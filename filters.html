@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='filtersApp'>
+<head>
+	<meta charset="utf-8">
+
+	<title>Assignment3 Assignment - part 2</title>
+
+	<script src="../js/angular16.js"></script>
+
+	<script src='../js/filters.js'></script>
+</head>
+<body>
+	<div ng-controller='Filters'>
+		<h1>Angular JS Filters</h1>
+		
+		Input: <input type="text" ng-model='greeting'>
+
+		<br><br>
+
+		Delimiter: <input type="text" ng-model='delim'>
+
+		<br><br>
+		
+		<p>{{greeting | tokenize}} (Default)</p>
+		
+		<p>{{greeting | tokenize:delim}} (With option)</p>
+	</div>
+</body>
+</html>
